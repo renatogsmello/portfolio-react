@@ -1,9 +1,36 @@
-$corPrincipalLight: #85d4c7;
+$corPrincipalLight-1: #00e1bb;
+$corPrincipalLight-2: #85d4c7;
 $corPrincipal: #013129;
 $corPrincipalDark: #03483d;
 
+@font-face {
+	font-family: PermanentMarker;
+	src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+	font-family: MontserratLight;
+	src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+	font-family: MontserratRegular;
+	src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: MontserratBold;
+	src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
 body {
-	font-family: Montserrat;
+	font-family: MontserratRegular;
+}
+
+.section-title {
+	font-family: PermanentMarker;
+	color: #085346;
+	font-size: 110px;
+	transform: rotate(-5deg);
+	margin-bottom: 100px;
 }
 
 .bg-gradient-principal {
@@ -18,7 +45,7 @@ body {
 
 .navbar-nav {
 	a {
-		color: $corPrincipalLight !important;
+		color: $corPrincipalLight-2 !important;
 		&:hover {
 			color: #fff !important;
 		}
@@ -45,16 +72,61 @@ body {
 	}
 }
 .btn-outline-success {
-	color: $corPrincipalLight;
-	border-color: $corPrincipalLight;
+	color: $corPrincipalLight-1;
+	border-color: $corPrincipalLight-1;
 
 	&:hover {
-		background-color: $corPrincipalLight;
-		border-color: $corPrincipalLight;
+		background-color: $corPrincipalLight-1;
+		border-color: $corPrincipalLight-1;
 		color: $corPrincipal;
 	}
 }
 
 #inicio {
 	padding-top: 10rem;
+}
+
+.card {
+	background-color: #023b32;
+	padding: 1rem;
+	border-radius: 10px;
+	border-bottom: 10px solid $corPrincipalLight-1;
+	height: 100%;
+	i {
+		font-size: 2.1em;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 0.03em;
+		-webkit-text-stroke-color: $corPrincipalLight-1;
+		position: absolute;
+		top: -35px;
+		background-color: $corPrincipalDark;
+		padding: 1rem;
+		border-radius: 50%;
+		width: 77px;
+		border: 5px solid $corPrincipal;
+
+		&.fa-sitemap,
+		&.fa-code {
+			font-size: 1.8em;
+		}
+	}
+	.card-title {
+		font-weight: bold;
+		font-size: 24px;
+		color: white;
+		margin-top: 2rem;
+	}
+	.card-text {
+		margin-top: 1rem;
+		color: $corPrincipalLight-2;
+	}
+}
+
+#skills-icons {
+	i {
+		color: $corPrincipalLight-1;
+	}
+	p {
+		font-family: MontserratLight;
+	}
 }
