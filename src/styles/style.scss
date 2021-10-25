@@ -43,15 +43,6 @@ body {
 	background-color: $corPrincipal;
 }
 
-.navbar-nav {
-	a {
-		color: $corPrincipalLight-2 !important;
-		&:hover {
-			color: #fff !important;
-		}
-	}
-}
-
 .navbar-brand {
 	img {
 		width: 150px;

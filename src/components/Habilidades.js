@@ -1,43 +1,41 @@
 import React from "react"
-import { Container } from "react-bootstrap"
-import { Card } from "react-bootstrap"
 
 export default function Habilidades() {
 	return (
 		<>
 			<div id="habilidades" className="bg-principal vh-100">
-				<Container>
+				<div>
 					<h1 className="pt-5 section-title">Habilidades</h1>
 					<div className="row">
 						<div className="col">
-							<Card>
+							<div>
 								<i className="fas fa-pencil-ruler"></i>
-								<Card.Body>
-									<Card.Title>Design UI/UX</Card.Title>
-									<Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-								</Card.Body>
-							</Card>
+								<div>
+									<div>Design UI/UX</div>
+									<div>Some quick example text to build on the div title and make up the bulk of the div's content.</div>
+								</div>
+							</div>
 						</div>
 						<div className="col">
-							<Card>
+							<div>
 								<i className="fas fa-sitemap"></i>
-								<Card.Body>
-									<Card.Title>Web Design</Card.Title>
-									<Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
-								</Card.Body>
-							</Card>
+								<div>
+									<div>Web Design</div>
+									<div>Some quick example text to build on the div title and make up the bulk of the div's content.</div>
+								</div>
+							</div>
 						</div>
 						<div className="col">
-							<Card>
+							<div>
 								<i className="fas fa-code"></i>
-								<Card.Body>
-									<Card.Title>Desenvolvimento Web</Card.Title>
-									<Card.Text>
-										Some quick example text to build on the card title and make up the bulk of the card's content.sdoifjosdjfosdjfosdjf
+								<div>
+									<div>Desenvolvimento Web</div>
+									<div>
+										Some quick example text to build on the div title and make up the bulk of the div's content.sdoifjosdjfosdjfosdjf
 										sdfoisdjfsodjfsodfj sfosidjfsdfoisdjfosdjf sdoijfsodijfsoij
-									</Card.Text>
-								</Card.Body>
-							</Card>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div id="skills-icons" className="row mt-5">
@@ -74,7 +72,7 @@ export default function Habilidades() {
 							<p className="text-white fs-4 mt-3">React</p>
 						</div>
 					</div>
-				</Container>
+				</div>
 			</div>
 		</>
 	)

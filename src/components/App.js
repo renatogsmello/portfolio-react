@@ -10,7 +10,13 @@ function App() {
 	return (
 		<>
 			<Router>
-				<Menu />
+				<Menu>
+					<li>Ínicio</li>
+					<li>Habilidades</li>
+					<li>Experiência Profissional</li>
+					<li>Portfolio</li>
+					<li>Contato</li>
+				</Menu>
 				<Switch>
 					<Route exact path="/" component={Inicio} />
 					<Route exact path="/#habilidades" component={Habilidades} />
