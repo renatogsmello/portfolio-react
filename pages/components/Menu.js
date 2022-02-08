@@ -6,17 +6,19 @@ export default function Menu() {
 	return (
 		<>
 			<nav>
-				<picture>
-					<source srcSet="/imagens/logo.png" type="image/svg+xml" />
-					<Image src="/imagens/logo.png" width="157px" height="40px" alt="Logo" />
-				</picture>
+				<Link href={"/"}>
+					<picture>
+						<source srcSet="/imagens/logo.svg" type="image/svg+xml" />
+						<Image src="/imagens/logo.svg" width="157px" height="40px" alt="Logo" />
+					</picture>
+				</Link>
 
-				<MenuItens itens={["Habilidades", "Experiência Profissional", "Portfolio", "Sobre"]} />
+				<MenuItens itens={["Habilidades", "Experiências", "Portfolio", "Sobre"]} />
 			</nav>
 			<style jsx>
 				{`
 					nav {
-						height: 70px;
+						height: 7vh;
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
@@ -26,6 +28,9 @@ export default function Menu() {
 						margin-right: auto;
 						max-width: 1250px;
 					}
+					picture {
+						cursor: pointer;
+					}
 				`}
 			</style>
 		</>
@@ -33,13 +38,13 @@ export default function Menu() {
 }
 
 function MenuItens(props) {
-	console.log(props.itens)
+	const [isOpen, setOpenState] = React.useState("hide")
 	return (
 		<>
-			<ul>
-				{props.itens.map((item) => {
+			<ul className={isOpen ? "hide" : "show"}>
+				{props.itens.map((item, index) => {
 					return (
-						<li>
+						<li key={index}>
 							<Link href={`/#${item}`}>
 								<a>{item}</a>
 							</Link>
@@ -47,6 +52,11 @@ function MenuItens(props) {
 					)
 				})}
 			</ul>
+			<button onClick={() => setOpenState(!isOpen)}>
+				<div className="line1"></div>
+				<div className="line2"></div>
+				<div className="line3"></div>
+			</button>
 			<style jsx>
 				{`
 					ul {
@@ -58,6 +68,47 @@ function MenuItens(props) {
 						padding: 1rem;
 						text-decoration: none;
 						color: white;
+					}
+					button {
+						display: none;
+						background: none;
+						border: none;
+					}
+					button div {
+						width: 25px;
+						height: 3px;
+						background-color: rgb(226, 226, 226);
+						margin: 5px;
+					}
+
+					@media screen and (max-width: 768px) {
+						ul {
+							position: absolute;
+							right: 0px;
+							height: 93vh;
+							top: 7vh;
+							flex-direction: column;
+							align-items: center;
+							background-color: #013129;
+							width: 50%;
+							justify-content: space-around;
+							transform: translateX(0%);
+							transition: transform 0.5s ease-in;
+						}
+						ul.hide {
+							transform: translateX(100%);
+						}
+
+						li {
+							opacity: 0;
+						}
+						ul.show li {
+							opacity: 1;
+						}
+						button {
+							display: block;
+							cursor: pointer;
+						}
 					}
 				`}
 			</style>

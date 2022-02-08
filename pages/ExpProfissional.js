@@ -1,14 +1,11 @@
 import React from "react"
-import { Container } from "react-bootstrap"
-import logoCbf from "../imagens/logo_cbf.png"
 export default function ExpProfissional() {
 	return (
 		<>
-			<section id="experiencia-profissional" className="bg-gradient-multiple-principal">
-				<Container>
-					<h1 className="text-white mt-5">Experiência Profisional</h1>
-					<img src={logoCbf} alt="logo CBF"></img>
-				</Container>
+			<section id="Experiências" className="bg-gradient-multiple-principal">
+				<div className="container">
+					<h1 className="section-title">Experiência Profisional</h1>
+				</div>
 			</section>
 		</>
 	)
