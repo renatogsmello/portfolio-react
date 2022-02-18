@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { ButtonRounded } from "./Buttons"
 
 export default function Menu() {
 	return (
@@ -13,7 +14,10 @@ export default function Menu() {
 					</picture>
 				</Link>
 
-				<MenuItens itens={["Habilidades", "Experiências", "Portfolio", "Sobre"]} />
+				<MenuItens itens={["Habilidades", "Experiência", "Portfolio", "Sobre"]} />
+				<ButtonRounded>
+					<i className="fas fa-cloud-download-alt"></i>Baixar CV
+				</ButtonRounded>
 			</nav>
 			<style jsx>
 				{`
@@ -31,6 +35,9 @@ export default function Menu() {
 					picture {
 						cursor: pointer;
 					}
+					i {
+						margin-right: 0.75rem;
+					}
 				`}
 			</style>
 		</>
@@ -43,9 +50,10 @@ function MenuItens(props) {
 		<>
 			<ul className={isOpen ? "hide" : "show"}>
 				{props.itens.map((item, index) => {
+					const itemSemAcento = item.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 					return (
 						<li key={index}>
-							<Link href={`/#${item}`}>
+							<Link href={`/#${itemSemAcento}`}>
 								<a>{item}</a>
 							</Link>
 						</li>
@@ -68,6 +76,9 @@ function MenuItens(props) {
 						padding: 1rem;
 						text-decoration: none;
 						color: white;
+					}
+					a:hover {
+						color: #00e1bb;
 					}
 					button {
 						display: none;
