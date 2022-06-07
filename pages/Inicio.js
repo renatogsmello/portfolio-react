@@ -14,7 +14,7 @@ export default function Inicio() {
 						<p>
 							Crio interfaces para web a fim de promover uma grande experiência para seus usuários e atualmente estou ajudando a construir
 							sistemas na
-							<a href="https://globalhitss.com" target="_blank" referrerPolicy="no-referrer">
+							<a href="https://globalhitss.com" target="_blank" referrerPolicy="no-referrer" rel="noreferrer">
 								Global Hitss
 							</a>
 							.

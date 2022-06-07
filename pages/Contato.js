@@ -6,13 +6,13 @@ export default function Contato() {
 				<div className="container">
 					<h1 className="section-title">Contato</h1>
 					<div className="contato-container">
-						<a href="mailto:renatogsmello@gmail.com" target="_blank">
+						<a href="mailto:renatogsmello@gmail.com" target="_blank" rel="noreferrer">
 							<i className="fas fa-envelope"></i>
 						</a>
-						<a href="https://github.com/renatogsmello" target="_blank">
+						<a href="https://github.com/renatogsmello" target="_blank" rel="noreferrer">
 							<i className="fab fa-github"></i>
 						</a>
-						<a href="https://www.linkedin.com/in/renato-mello-20a5a84a/" target="_blank">
+						<a href="https://www.linkedin.com/in/renato-mello-20a5a84a/" target="_blank" rel="noreferrer">
 							<i className="fab fa-linkedin-in"></i>
 						</a>
 					</div>

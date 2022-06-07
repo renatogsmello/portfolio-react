@@ -1,4 +1,4 @@
-export function Button(props) {
+export default function Button(props) {
 	return (
 		<>
 			<button type="button">{props.children}</button>
