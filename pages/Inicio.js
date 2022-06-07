@@ -1,4 +1,3 @@
-import Image from "next/image"
 import React from "react"
 import { ButtonOutline } from "./components/Buttons"
 export default function Inicio() {

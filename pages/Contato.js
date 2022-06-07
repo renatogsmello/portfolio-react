@@ -1,7 +1,4 @@
-import Link from "next/link"
 import React from "react"
-import { ButtonOutline } from "./components/Buttons"
-import Card from "./components/Cards"
 export default function Contato() {
 	return (
 		<>

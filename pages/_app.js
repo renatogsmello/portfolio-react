@@ -1,4 +1,3 @@
-// import "../public/styles/style.min.css"
 import "../public/fonts/fontawesome-free-5/css/all.css"
 import "../public/fonts/devicon/devicon.min.css"
 
