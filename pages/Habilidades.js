@@ -9,31 +9,19 @@ export default function Habilidades() {
 				<div className="container">
 					<h1 className="section-title">Habilidades</h1>
 					<div className="card-container">
-						<Card
-							icon="fas fa-pencil-ruler"
-							title="Design UI/UX"
-							text="Some quick example text to build on the card title and make up the bulk of the card's content."
-						/>
-						<Card
-							icon="fas fa-sitemap"
-							title="Web Design"
-							text="Some quick example text to build on the card title and make up the bulk of the card's content."
-						/>
-						<Card
-							icon="fas fa-code"
-							title="Desenvolvimento Front End"
-							text="Some quick example text to build on the card title and make up the bulk of the card's content."
-						/>
+						<Card icon="fas fa-pencil-ruler" title="Design UI/UX" text="" />
+						<Card icon="fas fa-sitemap" title="Web Design" text="" />
+						<Card icon="fas fa-code" title="Desenvolvimento Front End" text="" />
 					</div>
 					<div id="skills-icons" className="row mt-5">
-						<Skills icon="devicon-xd-plain" name="Adobe Xd" />
+						<Skills icon="devicon-figma-plain" name="Figma" />
 						<Skills icon="devicon-html5-plain" name="HTML" />
 						<Skills icon="devicon-css3-plain" name="CSS" />
 						<Skills icon="devicon-sass-original" name="SASS" />
 						<Skills icon="devicon-javascript-plain" name="Javascript" />
 						<Skills icon="devicon-react-original" name="React" />
 						<Skills icon="devicon-bootstrap-plain" name="Bootstrap" />
-						<Skills icon="devicon-tailwindcss-plain" name="Tailwindcss" />
+						<Skills icon="devicon-github-original" name="Github" />
 					</div>
 				</div>
 			</section>

@@ -14,9 +14,11 @@ export default function Menu() {
 					</picture>
 				</Link>
 
-				<MenuItens itens={["Habilidades", "Experiência", "Portfolio", "Sobre"]} />
+				<MenuItens itens={["Habilidades", "Experiência", "Portfolio", "Contato"]} />
 				<ButtonRounded>
-					<i className="fas fa-cloud-download-alt"></i>Baixar CV
+					<a href="../../files/cv_renato_mello.pdf" target="_blank">
+						<i className="fas fa-cloud-download-alt"></i>Baixar CV
+					</a>
 				</ButtonRounded>
 			</nav>
 			<style jsx>
@@ -37,6 +39,14 @@ export default function Menu() {
 					}
 					i {
 						margin-right: 0.75rem;
+					}
+					a {
+						// color: #48eed2;
+						text-decoration: none;
+					}
+					a:hover {
+						background-color: #00e1bb;
+						color: #000;
 					}
 				`}
 			</style>

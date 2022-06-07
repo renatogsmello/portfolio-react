@@ -1,8 +1,10 @@
 import React from "react"
 import Menu from "./components/Menu"
+import Contato from "./Contato"
 import ExpProfissional from "./ExpProfissional"
 import Habilidades from "./Habilidades"
 import Inicio from "./Inicio"
+import Portfolio from "./Portfolio"
 
 export default function App() {
 	return (
@@ -14,6 +16,8 @@ export default function App() {
 				<Inicio />
 				<Habilidades />
 				<ExpProfissional />
+				<Portfolio />
+				<Contato />
 			</main>
 			<style jsx>{`
 				header {

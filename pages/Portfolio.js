@@ -1,14 +1,40 @@
 import React from "react"
-import { Container } from "react-bootstrap"
 
 export default function Portfolio() {
 	return (
 		<>
-			<div className="bg-dark">
-				<Container>
-					<h1 className="text-white mt-5">Portfolio</h1>
-				</Container>
-			</div>
+			<section id="Portfolio">
+				<div className="container">
+					<h1 className="section-title">Portfolio</h1>
+					<div className="exp-container">
+						<h2>Em Breve!</h2>
+					</div>
+				</div>
+			</section>
+			<style jsx>
+				{`
+					section {
+						height: 500px;
+						background-color: #013129;
+					}
+
+					.container {
+						max-width: 1250px;
+						margin-left: auto;
+						margin-right: auto;
+						padding: 0 1.5rem;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-around;
+						height: 100%;
+					}
+					h2 {
+						text-align: center;
+						color: #fff;
+						font-size: 3em;
+					}
+				`}
+			</style>
 		</>
 	)
 }

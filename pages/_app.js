@@ -31,6 +31,9 @@ function GlobalStyle() {
 						overflow-x: hidden;
 					}
 				}
+				a {
+					color: #48eed2;
+				}
 			`}
 		</style>
 	)

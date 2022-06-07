@@ -8,40 +8,39 @@ export default function ExpProfissional() {
 		<>
 			<section id="Experiencia" className="bg-gradient-multiple-principal">
 				<div className="container">
-					<h1 className="section-title">Experiência</h1>
 					<div>
+						<h1 className="section-title">Experiência</h1>
 						<div className="exp-container">
-							<p>5+</p>
+							<p>7+</p>
 							<p>Anos de Experiencia</p>
-						</div>
-						<div>
-							<p>50+</p>
-							<p>Projetos Concluídos</p>
 						</div>
 					</div>
 					<div className="empresas-container">
-						<div>
-							<a href="https://www.google.com">
+						<div className="empresa">
+							<a href="https://www.globalhitss.com">
 								<picture>
 									<source srcSet={hitssLogo} type="image/svg+xml" />
 									<Image src={hitssLogo} placeholder="blur" alt="Global Hitss Logo" />
 								</picture>
+								Global Hitss
 							</a>
 						</div>
-						<div>
-							<a href="https://www.google.com">
+						<div className="empresa">
+							<a href="https://ccead.puc-rio.br/home/">
 								<picture>
 									<source srcSet={cceadLogo} type="image/svg+xml" />
 									<Image src={cceadLogo} placeholder="blur" alt="CCEAD Logo" />
 								</picture>
+								CCEAD - PUC-Rio
 							</a>
 						</div>
-						<div>
-							<a href="https://www.google.com">
+						<div className="empresa">
+							<a href="https://www.cbf.com.br">
 								<picture>
 									<source srcSet={cbfLogo} type="image/svg+xml" />
 									<Image src={cbfLogo} placeholder="blur" alt="CBF Logo" />
 								</picture>
+								Confederação Brasileira de Futebol
 							</a>
 						</div>
 					</div>
@@ -53,14 +52,47 @@ export default function ExpProfissional() {
 						height: 500px;
 						background-image: linear-gradient(#013129, #03483d, #03483d, #013129);
 					}
+					h1.section-title {
+						color: #03352c;
+					}
 					.container {
 						max-width: 1250px;
 						margin-left: auto;
 						margin-right: auto;
 						padding: 0 1.5rem;
-						display: flex;
-						align-items: center;
+						// display: flex;
+						// align-items: center;
 						height: 100%;
+					}
+					.exp-container {
+						font-size: 1.8em;
+						position: relative;
+						top: -45px;
+						left: 45px;
+						color: #fff;
+						font-weight: bold;
+					}
+					.empresas-container {
+						display: flex;
+						// margin-left: auto;
+						justify-content: space-between;
+						width: 100%;
+					}
+					picture {
+						margin-bottom: 1rem;
+					}
+					a {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						color: #00e1bb;
+						text-decoration: none;
+						padding: 1rem;
+					}
+					a:hover {
+						background-color: rgba(0, 0, 0, 0.25);
+						border-radius: 0.25rem;
+						padding: 1rem;
 					}
 				`}
 			</style>
