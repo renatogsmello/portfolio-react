@@ -48,6 +48,15 @@ export default function Contato() {
 						background-color: #00e1bb;
 						color: #000;
 					}
+					@media screen and (max-width: 768px) {
+						h1.section-title {
+							font-size: 3.5em;
+							color: #0a8b75;
+						}
+						.contato-container {
+							margin-top: 2rem;
+						}
+					}
 				`}
 			</style>
 		</>

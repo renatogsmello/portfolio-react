@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ButtonRounded } from "./Buttons"
 
 export default function Menu() {
 	return (
@@ -13,18 +12,12 @@ export default function Menu() {
 						<Image src="/imagens/logo.svg" width="157px" height="40px" alt="Logo" />
 					</picture>
 				</Link>
-
 				<MenuItens itens={["Habilidades", "Experiência", "Portfolio", "Contato"]} />
-				<ButtonRounded>
-					<a href="../../files/cv_renato_mello.pdf" target="_blank">
-						<i className="fas fa-cloud-download-alt"></i>Baixar CV
-					</a>
-				</ButtonRounded>
 			</nav>
 			<style jsx>
 				{`
 					nav {
-						height: 7vh;
+						height: 60px;
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
@@ -70,6 +63,7 @@ function MenuItens(props) {
 					)
 				})}
 			</ul>
+
 			<button onClick={() => setOpenState(!isOpen)}>
 				<div className="line1"></div>
 				<div className="line2"></div>

@@ -1,5 +1,7 @@
 import React from "react"
 import { ButtonOutline } from "./components/Buttons"
+import Button from "./components/Buttons"
+
 export default function Inicio() {
 	return (
 		<>
@@ -19,7 +21,16 @@ export default function Inicio() {
 							</a>
 							.
 						</p>
-						<ButtonOutline>Dê uma olhada no meu trabalho</ButtonOutline>
+						<div className="button-left">
+							<ButtonOutline>Dê uma olhada no meu trabalho</ButtonOutline>
+						</div>
+						<div className="button-right">
+							<Button>
+								<a id="cv" href="../../files/cv_renato_mello.pdf" target="_blank">
+									<i className="fas fa-cloud-download-alt"></i>Baixar CV
+								</a>
+							</Button>
+						</div>
 					</div>
 					<picture>
 						<source srcSet="/imagens/inicio_fundo.png" type="image/svg+xml" />
@@ -30,6 +41,7 @@ export default function Inicio() {
 			<style jsx>{`
 				section {
 					height: 100vh;
+					width: 100%;
 					background-image: radial-gradient(#03483d 30%, #013129 70%);
 				}
 				.container {
@@ -74,10 +86,26 @@ export default function Inicio() {
 					font-weight: regular;
 					color: #a0c8c1;
 				}
+				.button-left {
+					display: inline-block;
+					margin-right: 1rem;
+				}
+				.button-right {
+					display: inline-block;
+				}
+				p a {
+					margin-left: 0.3rem;
+				}
 				a {
 					color: #48eed2;
 					text-decoration: none;
-					margin-left: 0.5rem;
+				}
+				a i {
+					margin-right: 0.5rem;
+				}
+				a#cv {
+					color: #043d32;
+					font-size: 1em;
 				}
 				picture {
 					position: absolute;
@@ -85,6 +113,96 @@ export default function Inicio() {
 				}
 				img {
 					opacity: 0.7;
+				}
+				@media screen and (max-width: 768px) {
+					.container {
+						width: 100%;
+					}
+					.intro {
+						flex: none;
+						width: 100%;
+					}
+					h1 {
+						font-size: 2rem;
+					}
+					h1 span {
+						font-size: 2rem;
+					}
+					h2 {
+						font-size: 2rem;
+					}
+					p:first-of-type {
+						font-size: 16px;
+					}
+					p:last-of-type {
+						font-size: 1.2em;
+					}
+					picture {
+						position: relative;
+						left: -100%;
+					}
+					.button-left {
+						margin-right: 0;
+						margin-bottom: 1rem;
+						display: block;
+					}
+					.button-left > * {
+						width: 100%;
+						display: block;
+					}
+					.button-right {
+						display: block;
+						width: 100%;
+					}
+					.button-right > * {
+						width: 100%;
+						display: block;
+					}
+				}
+				@media screen and (max-width: 1024px) {
+					.container {
+						width: 100%;
+					}
+					.intro {
+						flex: none;
+						width: 100%;
+					}
+					h1 {
+						font-size: 2rem;
+					}
+					h1 span {
+						font-size: 2rem;
+					}
+					h2 {
+						font-size: 2rem;
+					}
+					p:first-of-type {
+						font-size: 16px;
+					}
+					p:last-of-type {
+						font-size: 1.2em;
+					}
+					picture {
+						position: relative;
+						left: -50%;
+					}
+					.button-left {
+						margin-right: 0;
+						margin-bottom: 1rem;
+						display: block;
+					}
+					.button-left > * {
+						width: 100%;
+						display: block;
+					}
+					.button-right {
+						display: block;
+						width: 100%;
+					}
+					.button-right > * {
+						width: 100%;
+						display: block;
+					}
 				}
 			`}</style>
 		</>

@@ -10,9 +10,15 @@ export default function Button(props) {
 						padding: 0.65rem 1rem;
 						border-radius: 0.25rem;
 						cursor: pointer;
+						font-size: 1em;
 					}
 					button:hover {
 						background-color: #05bf9f;
+					}
+					@media screen and (max-width: 768px) {
+						button {
+							width: 100%;
+						}
 					}
 				`}
 			</style>
@@ -39,6 +45,11 @@ export function ButtonOutline(props) {
 						background-color: #00e1bb;
 						color: #000;
 					}
+					@media screen and (max-width: 768px) {
+						button {
+							width: 100%;
+						}
+					}
 				`}
 			</style>
 		</>
@@ -59,6 +70,7 @@ export function ButtonRounded(props) {
 					cursor: pointer;
 					font-size: 1em;
 					border-radius: 2rem;
+					display: ${props.display == "none" ? "none" : "block"};
 				}
 				button:hover {
 					background-color: #00e1bb;
