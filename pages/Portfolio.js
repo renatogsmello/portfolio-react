@@ -33,6 +33,12 @@ export default function Portfolio() {
 						color: #fff;
 						font-size: 3em;
 					}
+					@media screen and (max-width: 768px) {
+						h1.section-title {
+							font-size: 3.5em;
+							color: #0a8b75;
+						}
+					}
 				`}
 			</style>
 		</>

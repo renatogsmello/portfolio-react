@@ -48,6 +48,18 @@ export default function Habilidades() {
 						grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 						gap: 1.25rem;
 					}
+					@media screen and (max-width: 768px) {
+						h1 {
+							font-size: 3.5em;
+						}
+						.card-container {
+							margin-top: 1rem;
+							grid-template-columns: 1fr;
+						}
+						#skills-icons {
+							grid-template-columns: 50% 2fr;
+						}
+					}
 				`}
 			</style>
 		</>

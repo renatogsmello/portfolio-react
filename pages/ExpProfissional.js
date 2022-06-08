@@ -60,8 +60,6 @@ export default function ExpProfissional() {
 						margin-left: auto;
 						margin-right: auto;
 						padding: 0 1.5rem;
-						// display: flex;
-						// align-items: center;
 						height: 100%;
 					}
 					.exp-container {
@@ -74,7 +72,6 @@ export default function ExpProfissional() {
 					}
 					.empresas-container {
 						display: flex;
-						// margin-left: auto;
 						justify-content: space-between;
 						width: 100%;
 					}
@@ -93,6 +90,21 @@ export default function ExpProfissional() {
 						background-color: rgba(0, 0, 0, 0.25);
 						border-radius: 0.25rem;
 						padding: 1rem;
+					}
+					@media screen and (max-width: 768px) {
+						section {
+							height: 100%;
+						}
+						h1.section-title {
+							font-size: 3.5em;
+							color: #0a8b75;
+						}
+						.exp-container {
+							margin-top: 1rem;
+						}
+						.empresas-container {
+							flex-direction: column;
+						}
 					}
 				`}
 			</style>
