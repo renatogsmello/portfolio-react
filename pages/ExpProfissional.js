@@ -17,7 +17,7 @@ export default function ExpProfissional() {
 					</div>
 					<div className="empresas-container">
 						<div className="empresa">
-							<a href="https://www.globalhitss.com">
+							<a href="https://www.globalhitss.com" target="_blank">
 								<picture>
 									<source srcSet={hitssLogo} type="image/svg+xml" />
 									<Image src={hitssLogo} placeholder="blur" alt="Global Hitss Logo" />
@@ -26,7 +26,7 @@ export default function ExpProfissional() {
 							</a>
 						</div>
 						<div className="empresa">
-							<a href="https://ccead.puc-rio.br/home/">
+							<a href="https://ccead.puc-rio.br/home/" target="_blank">
 								<picture>
 									<source srcSet={cceadLogo} type="image/svg+xml" />
 									<Image src={cceadLogo} placeholder="blur" alt="CCEAD Logo" />
@@ -35,7 +35,7 @@ export default function ExpProfissional() {
 							</a>
 						</div>
 						<div className="empresa">
-							<a href="https://www.cbf.com.br">
+							<a href="https://www.cbf.com.br" target="_blank">
 								<picture>
 									<source srcSet={cbfLogo} type="image/svg+xml" />
 									<Image src={cbfLogo} placeholder="blur" alt="CBF Logo" />
