@@ -9,7 +9,7 @@ import Portfolio from "./Portfolio"
 export default function App() {
 	return (
 		<>
-			<header>
+			<header className="bg-green-800/90 fixed top-0 inset-x-0 z-10">
 				<Menu />
 			</header>
 			<main>
@@ -19,16 +19,6 @@ export default function App() {
 				<Portfolio />
 				<Contato />
 			</main>
-			<style jsx>{`
-				header {
-					background-color: #013129;
-					position: fixed;
-					top: 0;
-					left: 0;
-					right: 0;
-					z-index: 2;
-				}
-			`}</style>
 		</>
 	)
 }

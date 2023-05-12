@@ -48,3 +48,28 @@ export default function Card(props) {
 		</>
 	)
 }
+
+export function PortfolioCard({ id, link, title, img, description, tags }) {
+	return (
+		<a key={id} href={link} target="_blank" className="hover:bg-teal-900/50 rounded-xl p-2">
+			<div className="flex flex-col gap-3 relative">
+				<div className="relative basis-5/12 p-2">
+					<div className="bg-teal-700/95 rounded-full flex items-center justify-center py-2 px-4 text-green-200 absolute -bottom-2 inset-x-0 z-10">
+						{title}
+					</div>
+					<img className="rounded-2xl" src={img} />
+				</div>
+				<div className="flex flex-col basis-7/12 py-2 px-4 gap-3">
+					<p className="text-green-100">{description}</p>
+					<div className="flex gap-2">
+						{tags.map((tag) => (
+							<span key={id + tag} className="bg-green-100 px-3 py-1 rounded-full text-sm text-green-600">
+								{tag}
+							</span>
+						))}
+					</div>
+				</div>
+			</div>
+		</a>
+	)
+}

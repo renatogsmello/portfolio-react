@@ -17,7 +17,7 @@ export default function Habilidades() {
 						<Skills icon="devicon-figma-plain" name="Figma" />
 						<Skills icon="devicon-html5-plain" name="HTML" />
 						<Skills icon="devicon-css3-plain" name="CSS" />
-						<Skills icon="devicon-sass-original" name="SASS" />
+						<Skills icon="devicon-tailwindcss-plain" name="Tailwindcss" />
 						<Skills icon="devicon-javascript-plain" name="Javascript" />
 						<Skills icon="devicon-react-original" name="React" />
 						<Skills icon="devicon-bootstrap-plain" name="Bootstrap" />
